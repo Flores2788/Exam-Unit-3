@@ -1,6 +1,19 @@
 ﻿using System;
+
 public class ExamUnit3
 {
+    public static void Main(string[] args)
+    {
+        //testing the methods
+        ExamUnit3 exam = new ExamUnit3();
+        Console.WriteLine(exam.Square(5));
+        Console.WriteLine(exam.InchesToMillimeters(5));
+        Console.WriteLine(exam.SquareRoot(5));
+        Console.WriteLine(exam.Cube(5));
+        Console.WriteLine(exam.CircleArea(5));
+        Console.WriteLine(exam.Greet("Robert Plant"));
+    }
+
     public int Square(int num)
     {
         return num * num;
@@ -11,11 +24,24 @@ public class ExamUnit3
         return inches * 25.4;
     }
 
-    public static void Main(string[] args)
+    public double SquareRoot(double num)
     {
-      //testing the methods
-        ExamUnit3 exam = new ExamUnit3();
-        Console.WriteLine(exam.Square(5));
-        Console.WriteLine(exam.InchesToMillimeters(5));
+        return Math.Sqrt(num);
     }
+
+    public int Cube(int num)
+    {
+        return num * num * num;
+    }
+
+    public double CircleArea(double radius)
+    {
+        return Math.PI * radius * radius;
+    }
+    
+    public string Greet(string name)
+    {
+        return "Hello, " + name + "!";
+    }    
+    
 }
