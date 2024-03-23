@@ -1,11 +1,11 @@
 ﻿using System;
 
-public class ExamUnit3
+public class Task1
 {
     public static void Main(string[] args)
     {
-        //testing the methods
-        ExamUnit3 exam = new ExamUnit3();
+        
+        Task1 exam = new Task1();
         Console.WriteLine(exam.Square(5));
         Console.WriteLine(exam.InchesToMillimeters(5));
         Console.WriteLine(exam.SquareRoot(5));
@@ -45,3 +45,4 @@ public class ExamUnit3
     }    
     
 }
+
